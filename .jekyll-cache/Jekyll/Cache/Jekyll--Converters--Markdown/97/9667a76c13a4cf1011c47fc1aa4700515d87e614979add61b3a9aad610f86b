@@ -1,0 +1,16 @@
+I"¬<p>It is often convenient to split a complex javascript file in different files.
+In this case, make sure to import all the files:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"sketch-holder"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"sketch/Particle.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"sketch/ParticleSystem.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"sketch/sketch.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>This particle system is <a href="https://p5js.org/examples/simulate-particle-system.html">one of p5.js official examples</a>:</p>
+<div id="sketch-holder">
+    <script type="text/javascript" src="sketch/Particle.js"></script>
+    <script type="text/javascript" src="sketch/ParticleSystem.js"></script>
+    <script type="text/javascript" src="sketch/sketch.js"></script>
+</div>
+:ET

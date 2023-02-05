@@ -1,0 +1,61 @@
+I"$<div id="simple-sketch-holder">
+    <script type="text/javascript" src="simple_sketch.js"></script>
+</div>
+
+<p>In order to include a P5.js sketch in your post:</p>
+
+<ul>
+  <li>make sure that you are importing the p5.js library as a dependency. You can complete the
+front-matter of the post like this:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="na">dependencies</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">p5</span>
+<span class="nn">---</span></code></pre></figure>
+
+<ul>
+  <li>create in <code class="language-plaintext highlighter-rouge">div</code> in the markdown document of your post and include the javascript file
+(relative path from the markdown document). Note that we gave the <code class="language-plaintext highlighter-rouge">div</code> a custom id.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"simple-sketch-holder"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"simple_sketch.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<ul>
+  <li>in your javascript file, make sure to link the canvas to this specific <code class="language-plaintext highlighter-rouge">div</code>. See
+<a href="https://github.com/processing/p5.js/wiki/Positioning-your-canvas">the documentation</a>
+for more information.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">canvas</span> <span class="o">=</span> <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">710</span><span class="p">,</span> <span class="mi">400</span><span class="p">);</span>
+  <span class="nx">canvas</span><span class="p">.</span><span class="nx">parent</span><span class="p">(</span><span class="dl">'</span><span class="s1">simple-sketch-holder</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// this ensures that the sketch will be positioned properly</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><strong>Note</strong>: using the method, you can only include a single sketch per file. See <a href="https://github.com/processing/p5.js/wiki/Global-and-instance-mode">here</a> if you
+want to have several sketches running simultaneously.</p>
+
+<h2 id="handling-dependencies">Handling dependencies:</h2>
+<p>In this example we are only loading the <code class="language-plaintext highlighter-rouge">p5.js</code> library. However you might want to use
+other librairies later. In order to add a library, expand the file <code class="language-plaintext highlighter-rouge">_data/dependencies.yml</code>:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">p5</span>
+  <span class="na">element</span><span class="pi">:</span> <span class="s">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"&gt;&lt;/script&gt;</span>
+
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">p5.dom</span>
+  <span class="na">element</span><span class="pi">:</span> <span class="s">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"&gt;&lt;/script&gt;</span>
+
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">p5.sound</span>
+  <span class="na">element</span><span class="pi">:</span> <span class="s">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"&gt;&lt;/script&gt;</span></code></pre></figure>
+
+<p>Each entry in this file is composed of a <code class="language-plaintext highlighter-rouge">name</code> and an <code class="language-plaintext highlighter-rouge">element</code></p>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">name</code> is an alias that you can use in the list of dependencies defined in the front-matter
+of the article.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">element</code> is a script tag linking to a library hosted by a content-delivery-network
+<a href="https://cdnjs.com/libraries/p5.js">cdnjs for example</a>.</li>
+</ul>
+:ET

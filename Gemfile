@@ -5,10 +5,15 @@ source "https://rubygems.org"
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
 #
 #     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-gem "jekyll", "3.5.0"
+
+# default called for jekyll 3.8.5 but it fails
+gem "jekyll", ">= 4.0", "< 4.3"
+gem "webrick"
+
+# added the below lines due to error: "bundler: failed to load command: jekyll (/usr/local/lib/ruby/gems/3.1.0/bin/jekyll)
+#/usr/local/lib/ruby/gems/3.1.0/gems/kramdown-1.17.0/lib/kramdown/parser/html.rb:10:in `require': cannot load such file -- rexml/# parsers/baseparser (LoadError)"
+gem "kramdown"
+gem "kramdown-parser-gfm"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
