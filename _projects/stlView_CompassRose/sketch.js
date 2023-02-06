@@ -54,7 +54,7 @@ function draw() {
     povRate = povSliderValue;
     const frameXrotValue = frameXrot.value();
     lights();
-    background(220);
+    background(0);
     textFont(myFont);
     fill(0);
     text('Rotation Speed: ' + povSliderValue, -200, -160);
