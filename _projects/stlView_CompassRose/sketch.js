@@ -56,7 +56,7 @@ function draw() {
     lights();
     background(0);
     textFont(myFont);
-    fill(0);
+    fill(255);
     text('Rotation Speed: ' + povSliderValue, -200, -160);
     text('Spinner Viewer v0.1 ', -350, 190);
     text('Frame X Pos: ' + frameXrotValue, -200, -120);
