@@ -2,7 +2,7 @@
 layout: post
 title: "Edgartown Concept Spinner"
 date: 2023-2-5
-thumbnail: thumbnail.png
+thumbnail: edgartownLighthouse.gif
 dependencies:
   - p5
   - p5.dom

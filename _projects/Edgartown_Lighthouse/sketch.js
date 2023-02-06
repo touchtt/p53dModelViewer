@@ -18,11 +18,8 @@ let povSlider;
 let frameXrot;
 
 function preload() {
-    spinner = loadModel('heartDisk.obj', true);
     edgartownSpinner = loadModel('edgartownOrigin.obj', true);
     edgartownText = loadModel('edgartownText.obj', true);
-    applique = loadModel('lobsterApplique.obj', true);
-    heart = loadModel('heart.obj', true);
     spinFrame = loadModel('spinFrame.stl', true);
     frameWithJumpring = loadModel('frameWithJumpring.obj', true);
     goldTexture = loadImage('brightYellow.jpeg');

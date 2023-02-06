@@ -2,7 +2,7 @@
 layout: post
 title: "Lobster Love"
 date: 2023-2-5
-thumbnail: lobsterLoveThumbnail.png
+thumbnail: lobsterSpinner.gif
 dependencies:
   - p5
   - p5.dom
