@@ -1,6 +1,7 @@
 let spinner;
 let edgartownSpinner;
 let edgartownText;
+let frameWithJumpring;
 
 let canvas;
 
@@ -23,6 +24,7 @@ function preload() {
     applique = loadModel('lobsterApplique.obj', true);
     heart = loadModel('heart.obj', true);
     spinFrame = loadModel('spinFrame.stl', true);
+    frameWithJumpring = loadModel('frameWithJumpring.obj', true);
     goldTexture = loadImage('brightYellow.jpeg');
     silverTexture = loadImage('silverTexture.jpeg');
     blackTexture = loadImage('blackTexture.jpeg');
@@ -39,13 +41,9 @@ function setup() {
     textFont(myFont);
     textSize(15);
     povRate = 0.2;
-
     povSlider = createSlider(0.0, 2.0, 0.0, 0.1);
-
     povSlider.position(475, 225);
-
     frameXrot = createSlider(0.0, 360.0, 0.0, 1);
-
     frameXrot.position(475, 265);
 }
 
@@ -107,7 +105,7 @@ function draw() {
     texture(silverTexture);
     shininess(20);
     noStroke();
-    model(spinFrame);
+    model(frameWithJumpring);
     pop();
 
     //Edgartown Spinner
