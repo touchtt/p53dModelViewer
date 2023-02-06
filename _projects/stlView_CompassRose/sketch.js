@@ -42,11 +42,11 @@ function setup() {
 
     povSlider = createSlider(0.0, 2.0, 0.0, 0.1);
 
-    povSlider.position(275, 225);
+    povSlider.position(575, 225);
 
     frameXrot = createSlider(0.0, 360.0, 0.0, 1);
 
-    frameXrot.position(275, 265);
+    frameXrot.position(575, 265);
 }
 
 function draw() {
