@@ -90,13 +90,32 @@ function draw() {
     Edgardtown Lighthouse
     */
 
-    //Frame
+    // //Frame, no jumpring or bail
+    // push();
+    // // rotateY(frameCount/16);
+    // rotateX(frameXrotValue);
+    // rotateZ(22);
+    // scale(-1.1, 1.1, 1.1);
+    // translate(0, 0, 0);
+    // //normalMaterial();
+    // ambientLight(60);
+    // pointLight(255, 255, 255, locX, locY, 255);
+    // // console.log(locX, locY);
+    // // specularMaterial(255);
+    // texture(silverTexture);
+    // shininess(20);
+    // noStroke();
+    // model(spinFrame);
+    // pop();
+
+    //Frame with jumpring
     push();
     // rotateY(frameCount/16);
+    rotateX(11);
     rotateX(frameXrotValue);
-    rotateZ(22);
-    scale(-1.1, 1.1, 1.1);
-    translate(0, 0, 0);
+    rotateZ(0);
+    scale(-1.3, 1.3, 1.3);
+    translate(0, 0, -20);
     //normalMaterial();
     ambientLight(60);
     pointLight(255, 255, 255, locX, locY, 255);
@@ -107,6 +126,8 @@ function draw() {
     noStroke();
     model(frameWithJumpring);
     pop();
+    
+    
 
     //Edgartown Spinner
     push();
