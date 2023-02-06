@@ -20,6 +20,4 @@ The Edgartown Harbor Lighthouse spinner pendant is offered in three sizes: 12mm,
 
 Stunning in both Sterling Silver and 14k gold, this spinner is sure to turn heads.
 
----
-
 {%endhighlight%}
