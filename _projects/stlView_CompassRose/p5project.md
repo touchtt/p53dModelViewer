@@ -16,7 +16,9 @@ Edgartown Harbor Light is a lighthouse located in Edgartown, Massachusetts, Unit
 
 ## {%highlight yaml %}
 
-The Edgartown Harbor Light is offered in three sizes: 12mm, 18mm, and 22mm. Stunning in both Sterling Siler and 14k gold, this spinner is sure to turn heads.
+'''
+The Edgartown Harbor Lighthouse spinner pendant is offered in three sizes: 12mm, 18mm, and 22mm. Stunning in both Sterling Siler and 14k gold, this spinner is sure to turn heads.
+'''
 
 ---
 
