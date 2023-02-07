@@ -20,7 +20,7 @@ function preload() {
     spinFrame = loadModel('spinFrame.stl', true);
     frameWithJumpring = loadModel('frameWithJumpring_resize.obj', true);
     gem = loadModel('gem.obj', true);
-    saphBlue = loadImage('saphBlue.jpeg');
+    saphBlue = loadImage('oceanBlueTexture.png');
     silverTexture = loadImage('silverTexture.jpeg');
     blackTexture = loadImage('blackTexture.jpeg');
     myFont = loadFont('mp-bold.otf');
@@ -54,8 +54,8 @@ function draw() {
     text('Spinner Viewer v0.1 ', -350, 190);
     // text('Frame X Pos: ' + frameXrotValue, -200, -120);
     text('Frames/Sec: ' + povSliderValue * 60, -870, 50);
-    let locX = mouseX - width / 2;
-    let locY = mouseY - height / 2;
+    let locX = mouseX - width / 16;
+    let locY = mouseY - height / 16;
 
     // //Frame
     // push();
@@ -158,7 +158,7 @@ function draw() {
     // console.log(locX, locY);
     // specularMaterial(255);
     texture(blackTexture);
-    shininess(20);
+    shininess(255);
     noStroke();
     model(cascoBayText);
     pop();
@@ -174,12 +174,12 @@ function draw() {
     //(leftRight,depth,updown)
     translate(-400, 100, -950);
     //normalMaterial();
-    ambientLight(20);
+    ambientLight(255);
     pointLight(255, 255, 255, locX, locY, 255);
     // console.log(locX, locY);
     // specularMaterial(255);
     texture(saphBlue);
-    shininess(20);
+    shininess(100);
     noStroke();
     model(gem);
     pop();
