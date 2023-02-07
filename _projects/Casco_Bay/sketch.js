@@ -38,21 +38,21 @@ function setup() {
     povRate = 0.2;
     povSlider = createSlider(0.0, 1.6, 0.0, 0.1);
     povSlider.position(475, 225);
-    frameXrot = createSlider(0.0, 360.0, 0.0, 1);
-    frameXrot.position(475, 265);
+    // frameXrot = createSlider(0.0, 360.0, 0.0, 1);
+    // frameXrot.position(475, 265);
 }
 
 function draw() {
     const povSliderValue = povSlider.value();
     povRate = povSliderValue;
-    const frameXrotValue = frameXrot.value();
+    // const frameXrotValue = frameXrot.value();
     lights();
     background(255);
     textFont(myFont);
     fill(0);
     text('Rotation Speed: ' + povSliderValue, -200, -160);
     text('Spinner Viewer v0.1 ', -350, 190);
-    text('Frame X Pos: ' + frameXrotValue, -200, -120);
+    // text('Frame X Pos: ' + frameXrotValue, -200, -120);
     text('Frames/Sec: ' + povSliderValue * 60, -870, 50);
     let locX = mouseX - width / 2;
     let locY = mouseY - height / 2;
@@ -107,7 +107,7 @@ function draw() {
     push();
     // rotateY(frameCount/16);
     rotateX(11);
-    rotateX(frameXrotValue);
+    // rotateX(frameXrotValue);
     rotateZ(0);
     scale(-1.3, 1.3, 1.3);
     translate(0, 0, -20);
