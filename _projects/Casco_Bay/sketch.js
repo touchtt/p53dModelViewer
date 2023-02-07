@@ -18,7 +18,7 @@ function preload() {
     cascoBay = loadModel('cascoBay.obj', true);
     cascoBayText = loadModel('cascoBayText.obj', true);
     spinFrame = loadModel('spinFrame.stl', true);
-    frameWithJumpring = loadModel('frameWithJumpring.obj', true);
+    frameWithJumpring = loadModel('frameWithJumpring_resize.obj', true);
     gem = loadModel('gem.obj', true);
     saphBlue = loadImage('saphBlue.jpeg');
     silverTexture = loadImage('silverTexture.jpeg');
