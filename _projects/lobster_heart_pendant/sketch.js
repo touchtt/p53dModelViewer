@@ -21,6 +21,7 @@ function preload() {
     spinner = loadModel('heartDisk.obj', true);
     applique = loadModel('lobsterApplique.obj', true);
     heart = loadModel('heart.obj', true);
+    spinFrame = loadModel('spinFrame.stl', true);
     frameWithJumpring = loadModel('frameWithBale.obj', true);
     goldTexture = loadImage('brightYellow.jpeg');
     silverTexture = loadImage('silverTexture.jpeg');
