@@ -2,7 +2,7 @@
 layout: post
 title: "Casco Bay Charm"
 date: 2023-2-6
-thumbnail: cascoBayJumpring.gif
+thumbnail: cascoBayCharm.gif
 dependencies:
   - p5
   - p5.dom
