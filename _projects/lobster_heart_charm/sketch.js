@@ -63,24 +63,24 @@ function draw() {
     let locX = mouseX - width / 8;
     let locY = mouseY - height / 8;
 
-            //Frame with bale
-            push();
-            // rotateY(frameCount/16);
-            rotateX(11);
-            // rotateX(frameXrotValue);
-            rotateZ(0);
-            scale(-1.4, 1.4, 1.4);
-            translate(0, 0, -20);
-            //normalMaterial();
-            ambientLight(255);
-            pointLight(255, 255, 255, locX, locY, 255);
-            // console.log(locX, locY);
-            // specularMaterial(255);
-            texture(silverTexture);
-            shininess(20);
-            noStroke();
-            model(frameWithJumpring);
-            pop();
+            // //Frame with bale
+            // push();
+            // // rotateY(frameCount/16);
+            // rotateX(11);
+            // // rotateX(frameXrotValue);
+            // rotateZ(0);
+            // scale(-1.4, 1.4, 1.4);
+            // translate(0, 0, -20);
+            // //normalMaterial();
+            // ambientLight(255);
+            // pointLight(255, 255, 255, locX, locY, 255);
+            // // console.log(locX, locY);
+            // // specularMaterial(255);
+            // texture(silverTexture);
+            // shininess(20);
+            // noStroke();
+            // model(frameWithJumpring);
+            // pop();
 
     // //Frame
     // push();
