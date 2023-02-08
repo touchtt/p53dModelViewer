@@ -44,7 +44,10 @@ function setup() {
 
 function draw() {
     const povSliderValue = povSlider.value();
-    camera(0,0,2,0,0,0,0,0,1,0);
+    var x = map(mouseX, 0, width, -200, 200);
+	var y = map(mouseY, 0, height, -200, 200);
+	camera(0, 0, 200, x, y, 0, 0, 1, 0);
+    //camera(0,0,2,0,0,0,0,0,1,0);
     povRate = povSliderValue;
     // const frameXrotValue = frameXrot.value();
     lights();
