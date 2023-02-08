@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Casco Bay Concept Charm"
+title: "Casco Bay Charm"
 date: 2023-2-6
 thumbnail: cascoBayJumpring.gif
 dependencies:

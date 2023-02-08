@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Casco Bay Concept Pendant"
+title: "Casco Bay Pendant"
 date: 2023-2-6
 thumbnail: cascoBayBale.gif
 dependencies:
