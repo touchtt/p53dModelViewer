@@ -44,7 +44,7 @@ function setup() {
 
 function draw() {
     const povSliderValue = povSlider.value();
-    camera(0,0,(height/2)/tan(PI/6),0,0,0,0,0,1,0);
+    camera(0,0,2,0,0,0,0,0,1,0);
     povRate = povSliderValue;
     // const frameXrotValue = frameXrot.value();
     lights();
