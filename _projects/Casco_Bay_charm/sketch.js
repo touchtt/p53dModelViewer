@@ -17,7 +17,6 @@ let cascoBayText;
 function preload() {
     cascoBay = loadModel('cascoBay.obj', true);
     cascoBayText = loadModel('cascoBayText.obj', true);
-    spinFrame = loadModel('spinFrame.stl', true);
     frameWithJumpring = loadModel('frameWithJumpring_resize.obj', true);
     gem = loadModel('gem.obj', true);
     saphBlue = loadImage('oceanBlueTexture.png');
