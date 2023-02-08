@@ -37,7 +37,7 @@ function setup() {
     textSize(15);
     povRate = 0.2;
     povSlider = createSlider(0.0, 1.6, 0.0, 0.1);
-    povSlider.position(325, 225);
+    povSlider.position(300, 225);
     // frameXrot = createSlider(0.0, 360.0, 0.0, 1);
     // frameXrot.position(475, 265);
 }
@@ -46,7 +46,7 @@ function draw() {
     const povSliderValue = povSlider.value();
     var x = map(mouseX, 0, width, -200, 200);
 	var y = map(mouseY, 0, height, -200, 200);
-	camera(0, 0, 2500, 0, 0, 0, 0, 1, 0);
+	camera(0, 0, 2000, 0, 0, 0, 0, 1, 0);
     //camera(0,0,2,0,0,0,0,0,1,0);
     povRate = povSliderValue;
     // const frameXrotValue = frameXrot.value();
@@ -57,7 +57,7 @@ function draw() {
     text('Rotation Speed: ' + povSliderValue, -200, -160);
     text('Spinner Viewer v0.1 ', -350, 190);
     // text('Frame X Pos: ' + frameXrotValue, -200, -120);
-    text('Frames/Sec: ' + povSliderValue * 60, -870, 50);
+    //text('Frames/Sec: ' + povSliderValue * 60, -870, 50);
     let locX = mouseX - width / 16;
     let locY = mouseY - height / 16;
 
