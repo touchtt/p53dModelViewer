@@ -10,4 +10,4 @@ Persistence of vision traditionally refers to the optical illusion that occurs w
 
 Stay tuned :)
 
-![Logo for The Touch, Inc.](/p53dModelViewer/TTLogo-transparentbackground.png "TT Logo" width="200" height="200")
+<img src="/p53dModelViewer/TTLogo-transparentbackground.png" alt="TT Logo" width="200" height="200" title="Logo for The Touch, Inc.">
