@@ -40,7 +40,7 @@ function setup() {
     textSize(15);
     povRate = 0.2;
     povSlider = createSlider(0.0, 1.6, 0.0, 0.1);
-    povSlider.position(400, 225);
+    povSlider.position(350, 225);
     // frameXrot = createSlider(0.0, 360.0, 0.0, 1);
     // frameXrot.position(475, 265);
 }
