@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/p53dModelViewer/povExample.gif" alt="Persistence of Vision Example" width="400" height="500" title="Persistence of Vision Example">
+<img src="/p53dModelViewer/povExample.gif" alt="Persistence of Vision Example" width="240" height="229" title="Persistence of Vision Example">
 
 This is a website for showcasing [Persistence of Vision](https://www.masterclass.com/articles/persistence-of-vision-explained) spinner pendant simulations by [The Touch, Inc.](https://www.the-touch.com).
 
