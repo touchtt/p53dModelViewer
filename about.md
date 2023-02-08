@@ -10,4 +10,4 @@ Persistence of vision traditionally refers to the optical illusion that occurs w
 
 Stay tuned :)
 
-![Logo for The Touch, Inc.](/transparentbackground.png "TT Logo")
+![Logo for The Touch, Inc.](/TTLogo-transparentbackground.png "TT Logo")
