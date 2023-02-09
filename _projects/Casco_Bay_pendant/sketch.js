@@ -36,13 +36,16 @@ function setup() {
     textSize(15);
     povRate = 0.2;
     povSlider = createSlider(0.0, 1.6, 0.0, 0.1);
-    povSlider.position(300, 225);
+    povSlider.position(760, 175);
     // frameXrot = createSlider(0.0, 360.0, 0.0, 1);
     // frameXrot.position(475, 265);
 }
 
 function draw() {
     const povSliderValue = povSlider.value();
+    var x = map(mouseX, 0, width, -200, 200);
+    var y = map(mouseY, 0, height, -200, 200);
+    camera(0, 0, 300, 0, 0, 0, 0, 1, 0);
     povRate = povSliderValue;
     // const frameXrotValue = frameXrot.value();
     lights();
@@ -121,25 +124,25 @@ function draw() {
     // model(frameWithJumpring);
     // pop();
 
-        //Frame with bale
-        push();
-        // rotateY(frameCount/16);
-        rotateX(11);
-        // rotateX(frameXrotValue);
-        rotateZ(0);
-        scale(-1.4, 1.4, 1.4);
-        translate(0, 0, -20);
-        //normalMaterial();
-        ambientLight(255);
-        pointLight(255, 255, 255, locX, locY, 255);
-        // console.log(locX, locY);
-        // specularMaterial(255);
-        texture(silverTexture);
-        shininess(20);
-        noStroke();
-        model(frameWithJumpring);
-        pop();
-    
+    //Frame with bale
+    push();
+    // rotateY(frameCount/16);
+    rotateX(11);
+    // rotateX(frameXrotValue);
+    rotateZ(0);
+    scale(-1.4, 1.4, 1.4);
+    translate(0, 0, -20);
+    //normalMaterial();
+    ambientLight(255);
+    pointLight(255, 255, 255, locX, locY, 255);
+    // console.log(locX, locY);
+    // specularMaterial(255);
+    texture(silverTexture);
+    shininess(20);
+    noStroke();
+    model(frameWithJumpring);
+    pop();
+
     //Casco Bay Spinner
     push();
     //multuplying by negative 1 to rotate forward
@@ -180,7 +183,7 @@ function draw() {
     noStroke();
     model(cascoBayText);
     pop();
-    
+
     //gem 
     push();
     //multuplying by negative 1 to rotate forward

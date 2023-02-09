@@ -39,7 +39,7 @@ function setup() {
     textSize(15);
     povRate = 0.2;
     povSlider = createSlider(0.0, 1.6, 0.0, 0.1);
-    povSlider.position(300, 225);
+    povSlider.position(760, 175);
     // frameXrot = createSlider(0.0, 360.0, 0.0, 1);
     // frameXrot.position(475, 265);
 }
@@ -148,7 +148,7 @@ function draw() {
     // rotateY(frameCount/16);
     rotateX(90);
     rotateZ(22);
-    translate(0,10,0);
+    translate(0, 10, 0);
     scale(-.5, .5, .5);
     //normalMaterial();
     ambientLight(255);

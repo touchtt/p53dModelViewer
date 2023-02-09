@@ -42,7 +42,7 @@ function setup() {
     textSize(15);
     povRate = 0.2;
     povSlider = createSlider(0.0, 1.6, 0.0, 0.1);
-    povSlider.position(300, 225);
+    povSlider.position(760, 175);
     // frameXrot = createSlider(0.0, 360.0, 0.0, 1);
     // frameXrot.position(475, 265);
 }
@@ -103,7 +103,7 @@ function draw() {
     // rotateY(frameCount/16);
     rotateX(11);
     // rotateX(frameXrotValue);
-    rotateZ(0);
+    rotateZ(22);
     scale(1.4, 1.4, 1.4);
     translate(0, 0, -20);
     //normalMaterial();
@@ -147,12 +147,12 @@ function draw() {
 
     //applique
     push();
-    rotateX(frameCount * povRate * -1);
+    rotateX((35) + frameCount * povRate * -1);
     // rotateY(frameCount/16);
-    rotateX(90);
+    // rotateX(0);
     rotateZ(22);
-    translate(0,-22,0);
-    scale(-.8, .8, .8);
+    translate(0, 0, -20);
+    scale(-.7, .7, .7);
     //normalMaterial();
     ambientLight(255);
     pointLight(255, 255, 255, locX, locY, 150);
@@ -183,27 +183,27 @@ function draw() {
     model(circle);
     pop();
 
-      //gem 
-      push();
-      //multuplying by negative 1 to rotate forward
-      rotateX(frameCount * povRate * -1);
-      rotateX(90);
-      // rotateY(frameCount/16);
-      //rotateX(20.5);
-      rotateZ(22);
-      scale(.15);
-      //(leftRight,depth,updown)
-      translate(0, 0, 0);
-      //normalMaterial();
-      ambientLight(255);
-      pointLight(255, 255, 255, locX, locY, 255);
-      // console.log(locX, locY);
-      // specularMaterial(255);
-      texture(saphBlue);
-      shininess(100);
-      noStroke();
-      model(gem);
-      pop();
+    //gem 
+    push();
+    //multuplying by negative 1 to rotate forward
+    rotateX(frameCount * povRate * -1);
+    rotateX(90);
+    // rotateY(frameCount/16);
+    //rotateX(20.5);
+    rotateZ(22);
+    scale(.15);
+    //(leftRight,depth,updown)
+    translate(0, 0, 0);
+    //normalMaterial();
+    ambientLight(255);
+    pointLight(255, 255, 255, locX, locY, 255);
+    // console.log(locX, locY);
+    // specularMaterial(255);
+    texture(saphBlue);
+    shininess(100);
+    noStroke();
+    model(gem);
+    pop();
 }
 
 // function handleFile(file) {
