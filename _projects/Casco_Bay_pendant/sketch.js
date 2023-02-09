@@ -19,7 +19,7 @@ function preload() {
     cascoBayText = loadModel('cascoBayText.obj', true);
     frameWithJumpring = loadModel('frameWithBale.obj', true);
     gem = loadModel('gem.obj', true);
-    saphBlue = loadImage('oceanBlueTexture.png');
+    saphBlue = loadImage('redTexture.jpeg');
     silverTexture = loadImage('silverTexture.jpeg');
     blackTexture = loadImage('blackTexture.jpeg');
     myFont = loadFont('mp-bold.otf');
