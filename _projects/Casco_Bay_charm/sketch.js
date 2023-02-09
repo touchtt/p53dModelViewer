@@ -11,6 +11,8 @@ let povRate;
 let povSlider;
 let frameXrot;
 
+let zoomSlider;
+
 let saphBlue;
 let cascoBayText;
 
@@ -37,15 +39,20 @@ function setup() {
     povRate = 0.2;
     povSlider = createSlider(0.0, 1.6, 0.0, 0.1);
     povSlider.position(760, 225);
+
+    // zoomSlider = createSlider(200, 700, 350, 1);
+    // zoomSlider.position(760, 575);
     // frameXrot = createSlider(0.0, 360.0, 0.0, 1);
     // frameXrot.position(475, 265);
 }
 
 function draw() {
     const povSliderValue = povSlider.value();
+    // const zoomSliderValue = zoomSlider.value();
     var x = map(mouseX, 0, width, -200, 200);
     var y = map(mouseY, 0, height, -200, 200);
-    camera(0, 0, 750, 0, 0, 0, 0, 1, 0);
+    //camera(0, 0, zoomSliderValue, 0, 0, 0, 0, 1, 0);
+    camera(0, 0, 700, 0, 0, 0, 0, 1, 0);
     //camera(0,0,2,0,0,0,0,0,1,0);
     povRate = povSliderValue;
     // const frameXrotValue = frameXrot.value();

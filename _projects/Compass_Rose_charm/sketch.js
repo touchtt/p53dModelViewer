@@ -27,7 +27,7 @@ function preload() {
     goldTexture = loadImage('brightYellow.jpeg');
     silverTexture = loadImage('silverTexture.jpeg');
     blackTexture = loadImage('blackTexture.jpeg');
-    saphBlue = loadImage('oceanBlueTexture.png');
+    saphBlue = loadImage('redTexture.jpeg');
     myFont = loadFont('mp-bold.otf');
 }
 
@@ -50,7 +50,7 @@ function setup() {
 function draw() {
     var x = map(mouseX, 0, width, -200, 200);
     var y = map(mouseY, 0, height, -200, 200);
-    camera(0, 0, 750, 0, 0, 0, 0, 1, 0);
+    camera(0, 0, 700, 0, 0, 0, 0, 1, 0);
 
     const povSliderValue = povSlider.value();
     povRate = povSliderValue;
