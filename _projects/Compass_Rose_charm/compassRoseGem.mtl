@@ -1,0 +1,9 @@
+# Rhino
+newmtl Custom [imported]
+Ka 1.0000 1.0000 1.0000
+Kd 1.0000 1.0000 1.0000
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 0.8000
+Ns 0.0000
+refl -type sphere 91b2f006-90f0-42b1-9ad0-f409cd0a7574.png
